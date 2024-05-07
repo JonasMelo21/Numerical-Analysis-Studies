@@ -1,13 +1,8 @@
-# Numerical Analysis Studies
-  - This Repository aims to keep track of my personal studies in the field of Numerical Analysis.
-  - The book used as reference is the 9th edition of "Numerical Analysis" by Richard L. Burden and J. Douglas Faires.
-  - The chapters are listed bellow.
-  - Each chapter contains a brief description of what's covered by the book 
-  - Also each chapter contains a folder for each algorithm.
-  - The algorithms are written in C Language.
+# Numerical Analysis Studies 📊
 
+Welcome to my personal repository dedicated to studying Numerical Analysis! Here, I document my learning journey based on the 9th edition of "Numerical Analysis" by Richard L. Burden and J. Douglas Faires. Each chapter covers various aspects of numerical methods, accompanied by C implementations of algorithms.
 
-## Contents
+## Contents 📚
 
 1. [Chapter 1](chapter1/): Mathematical Preliminaries and Error Analysis
 2. [Chapter 2](chapter2/): Solutions of Equations in One Variable
@@ -22,16 +17,16 @@
 11. [Chapter 11](chapter11/): Boundary Value Problems for Ordinary Differential Equations
 12. [Chapter 12](chapter12/): Numerical Solutions for Partial Differential Equations
 
-## How to Use
+## How to Use ℹ️
 
 Each folder contains C code for a specific numerical algorithm. To use the code, simply navigate to the desired chapter and follow the instructions provided in the respective README file.
 
-## Contributions
+## Contributions 🌟
 
 Contributions are welcome! If you find any issues or want to add improvements, feel free to submit a pull request.
 
-## Resources
+## Resources 📌
 
-- [Book: Numerical Analysis by Richard L. Burden and J. Douglas Faires (9th edition)] (https://drive.google.com/file/d/1qTyRvL0rwDiC3Ki8AEHKxQVENtCQenei/view?usp=drive_link)
+- [Book: Numerical Analysis by Richard L. Burden and J. Douglas Faires (9th edition)](https://drive.google.com/file/d/1qTyRvL0rwDiC3Ki8AEHKxQVENtCQenei/view?usp=drive_link)
 
-
+Happy learning! 🚀

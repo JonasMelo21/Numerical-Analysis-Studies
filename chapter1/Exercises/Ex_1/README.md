@@ -1,3 +1,3 @@
 #Exercise 1
 
-![Exercise](/imagem.png)
+![Exercise](imagem.png)

@@ -12,4 +12,4 @@ For each value of i given bellow, it's possible to see:
 
 So 3 iteractions is enough
 
-Let's verify it with this [code](arctanAproximation.c)
+Let's verify it with this [code](arctanApproximation.c)

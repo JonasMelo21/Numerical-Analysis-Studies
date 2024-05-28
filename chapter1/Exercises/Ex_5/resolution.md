@@ -2,7 +2,7 @@ The following identity:
 
 ![image1](image1.png)
 
-Makes it to infer that:
+Makes it true to infer that:
 
 ![image2](image2.png)
 

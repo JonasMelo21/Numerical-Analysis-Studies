@@ -2,4 +2,4 @@
 
 The solution to the following exercise can be found [here](evaluatingPolynomialHornerMethod.c)
 
-! [Exercise09](image.png)
+![Exercise09](image.png)

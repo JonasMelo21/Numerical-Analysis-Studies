@@ -35,10 +35,13 @@ double polynomialSolution(double coeficients[], int size, double x,double consta
 }
 
 int main(){
-    double coeficients[3] = {1,-6.1,+3.2};
-    int size = sizeof(coeficients) / sizeof(coeficients[0]);
+    double coeficients[3] = {1,-6.1,+3.2}; /* Polynomial's coeficients*/
+ 
+    int size = sizeof(coeficients) / sizeof(coeficients[0]); /* Size of the polynomial given*/
+ 
     double constant_term = 1.5;
-    double x = 4.71;
+ 
+    double x = 4.71; /* Value fo x*/
     printf("Polynomial:\nP(x) = x^3 -6.1(x^2) + 3.2x + 1.5\nValue of x = 4.71\n");
 
     printf("\nP(X) Evaluated with Nested Multiplication for X = 4.71 with 3 digits: %.3f\n",polynomialSolution(coeficients,size,x,constant_term));

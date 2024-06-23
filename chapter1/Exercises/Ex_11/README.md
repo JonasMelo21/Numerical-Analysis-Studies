@@ -4,4 +4,4 @@ The following exercise:
 
 ![Exercise 11](image.png)
 
-Was solved [here]()
+Was solved [here](polynomialEq.c)

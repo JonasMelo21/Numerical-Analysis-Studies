@@ -1,5 +1,5 @@
 # Exercise 13
 
-![image](imge.png)
+![image](image.png)
 
 Solution comented [here](solution.md)

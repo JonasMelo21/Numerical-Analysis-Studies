@@ -2,4 +2,4 @@
 
 ![ex14](image.png)
 
-The solution is [here](solutoin.md)
+The solution is [here](solution.md)

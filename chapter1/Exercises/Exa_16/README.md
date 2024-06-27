@@ -1,5 +1,5 @@
 # Exercise 16
 
-![ex](image.png)}
+![ex](image.png)
 
-The commented solution is shown [here](solution.tex)
+The commented solution is shown [here](solution.md)

@@ -5,7 +5,7 @@ Welcome to my personal repository dedicated to studying Numerical Analysis! Here
 ## Contents 📚
 
 1. [Chapter 1](chapter1/): Mathematical Preliminaries and Error Analysis
-2. [Chapter 2](chapter2/): Solutions of Equations in One Variable
+2. [Chapter 2](Chapetr 02/): Solutions of Equations in One Variable
 3. [Chapter 3](chapter3/): Interpolation and Polynomial Approximation
 4. [Chapter 4](chapter4/): Numerical Differentiation and Integration
 5. [Chapter 5](chapter5/): Initial Value Problems for Ordinary Differential Equations

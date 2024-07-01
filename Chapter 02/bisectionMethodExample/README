@@ -1,5 +1,0 @@
-# Bisection Method Example
-
-![image](image.png)
-
-As f(1) = -5 and f(2) = 14, there is a number p within the interval [1,2] such that f(p) = 0. Let's find it using this [code](bisectionMethod.c)

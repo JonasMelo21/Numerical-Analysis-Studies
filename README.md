@@ -29,4 +29,4 @@ Contributions are welcome! If you find any issues or want to add improvements, f
 
 - [Book: Numerical Analysis by Richard L. Burden and J. Douglas Faires (9th edition)](https://drive.google.com/file/d/1qTyRvL0rwDiC3Ki8AEHKxQVENtCQenei/view?usp=drive_link)
 
-Happy learning! 🚀
+Wish me a happy learning! 🚀

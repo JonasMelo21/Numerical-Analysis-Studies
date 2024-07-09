@@ -1,4 +1,4 @@
-.:# Solutions of Equations in One Variable
+# Solutions of Equations in One Variable
 
 
 ## Sections.:

@@ -10,7 +10,7 @@ There are some conditions we need to verify before applying the Bisection Method
 
 If the conditions above are true, then we find a solution for f(x) = 0 through a **Binary Search** following the steps below:
   1. Define a midpoint between a and b, denoted by **p**. So: p = a + (b - a)/2.
-  2. If F(p) = 0, the we have found the solution.
+  2. If F(p) = 0, then we have found the solution.
   3. If F(p) has the same sign of F(a), then the solution is between p and b. So we search for the solution in the new interval which is [p,b].
   4. If not, the solution is between a and p. So we do another binary-search within the range [a,p]. And the new value of b is p.
   5. We keep doing steps 2 through 4 until we find a number p that satisfies F(p) = 0.

@@ -14,4 +14,4 @@ If the conditions above are true, then we find a solution for f(x) = 0 through a
   4. If not, the solution is between a and p. So we do another binary-search within the range [a,p]. And the new value of b is p.
   5. We keep doing steps 2 through 4 until we find a number p that satisfies F(p) = 0.
 
-The [exercises](exercises/) from the book are solved in a markdown file or in a programm in C language file
+The [exercises](exercises/) from the book are solved in a markdown file or in a programm in C language.

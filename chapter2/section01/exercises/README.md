@@ -8,4 +8,6 @@
 
 ![ex2](ex02/image.png)
 
-[Exercise 03](ex03/image.png)
+[Exercise 03](ex03/)
+
+![ex3](ex03/image.png)

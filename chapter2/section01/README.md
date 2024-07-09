@@ -7,6 +7,7 @@ and a [Project](projectSection01/) related to the method studied in this folder.
 There are some conditions we need to verify before applying the Bisection Method:
   - There has to be a function f(x) continuous on the interval [a,b].
   - The values of the function for a and b, which are f(a) and f(b) must have opposite signs. Which means: f(a) * f(b) < 0.
+
 If the conditions above are true, then we find a solution for f(x) = 0 through a **Binary Search** following the steps below:
   1. Define a midpoint between a and b, denoted by p. So: p = a + (b - a)/2.
   2. If F(p) = 0, the we have found the solution.

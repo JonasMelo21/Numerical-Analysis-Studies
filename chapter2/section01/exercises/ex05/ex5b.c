@@ -12,7 +12,7 @@
 #include<math.h>
 #include<stdio.h>
 
-// Implementing the function x - 2^(-x)
+// Implementing the function e^x − x^2 + 3x − 2
 double f(double x){
     return pow(exp(1.0),x) - pow(x,2) + 3*x - 2;
 }

@@ -3,4 +3,4 @@
 ![ex5](image.png)
 
 ## Commented Solutions:
-    - [Letter "**a**" solution](ex05a.c)
+[Letter "**a**" solution](ex05a.c)

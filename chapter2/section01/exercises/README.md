@@ -1,5 +1,8 @@
 # Exercises:
 
+Clicking in the number of the exercise,the page will be directed to the solution of the exercise.
+
+
 [Exercise 01](ex01/)
 
 ![ex1](ex01/image.png)

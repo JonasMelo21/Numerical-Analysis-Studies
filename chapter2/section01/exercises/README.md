@@ -22,3 +22,7 @@ Clicking in the number of the exercise,the page will be directed to the solution
 [Exercise 05](ex05/)
 
 ![ex05](ex05/image.png)
+
+[Exercise 06](ex06/)
+
+![ex6](ex06/image.png)

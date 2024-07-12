@@ -1,7 +1,6 @@
 # Exercises:
 
-Clicking in the number of the exercise,the page will be directed to the solution of the exercise.
-
+Selecting the exercise number will redirect the page to the solution.
 
 [Exercise 01](ex01/)
 

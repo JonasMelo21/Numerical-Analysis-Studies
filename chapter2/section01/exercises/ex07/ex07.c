@@ -15,11 +15,11 @@
 
 // Implementing the function 2*sin(x)
 double f(double x){
-    return 2*sin(x);
+    return x - 2*sin(x);
 }
 
 int main(){
-    double interval[2] = {0,0.5};
+    double interval[2] = {1,5};
     double tolerance = pow(10,-5);
     double a = interval[0];
     double FA = f(a);
@@ -31,7 +31,7 @@ int main(){
         double p = a + (b-a)/2;
         double FP = f(p);
 
-        if(p == FP || (b-a) / 2 < tolerance){
+        if(FP == 0 || (b-a) / 2 < tolerance){
             printf("Procedure executed successfully with %d iteractions\n",i);
             printf("First positive value of x that satisfies x = 2sin(x).: %.5f\n",p);
             break;

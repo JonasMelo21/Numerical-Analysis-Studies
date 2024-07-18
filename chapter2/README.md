@@ -1,6 +1,10 @@
 # Solutions of Equations in One Variable
 
-In numerical analysis, solving equations in one variable is a fundamental task, essential for a variety of scientific and engineering applications. Chapter 2 of "Numerical Analysis" by Richard L. Burden and J. Douglas Faires provides a comprehensive exploration of various methods for finding these solutions. The chapter covers classical techniques such as the Bisection Method, Fixed Point Iteration, and Newton's Method, as well as more advanced topics like error analysis, convergence acceleration, and specialized methods for polynomial equations, including Muller's Method. This repository aims to examine the strengths, limitations, and appropriate contexts for each method in order to select and apply the most effective techniques for solving single-variable equations.
+In numerical analysis, solving equations in one variable is a fundamental task, essential for a variety of scientific and engineering applications. Chapter 2 of "Numerical Analysis" by Richard L. Burden and J. Douglas Faires provides a comprehensive exploration of various methods for finding these solutions. 
+
+The chapter covers classical techniques such as the Bisection Method, Fixed Point Iteration, and Newton's Method, as well as more advanced topics like error analysis, convergence acceleration, and specialized methods for polynomial equations, including Muller's Method.
+
+This repository aims to examine the strengths, limitations, and appropriate contexts for each method in order to select and apply the most effective techniques for solving single-variable equations.
 
 ## Sections:
   1. [Section 01](section01/): The Bisection Method

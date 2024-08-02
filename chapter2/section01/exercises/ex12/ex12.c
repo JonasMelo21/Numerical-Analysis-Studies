@@ -32,7 +32,7 @@ int main(){
         FP = f(p);
         if(FP == 0 || (b-a)/2 < tol){
             printf("Procedure executed successfully after %d iteractions\n",i);
-            printf("Value of square root of 3: %.5f",p);
+            printf("Value of square root of 3: %.5f",p); // Output ---> 1.71399
             break;
         }
         else if(FA * FP > 0){

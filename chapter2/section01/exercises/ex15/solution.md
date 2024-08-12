@@ -6,7 +6,7 @@ We want to find the root of the equation \( x^3 + x - 4 = 0 \) with a precision 
 
 Let:
 - \( a = 1 \)
-- \( b = 4 \)
+- \( b = 2 \)
 - \( p \) be the root
 - \( p_n \) be the \( n \)-th term such that \( p_n \) is the approximation of \( p \) after \( n \) iterations.
 
@@ -19,35 +19,35 @@ p_n - p \leq \frac{b - a}{2^{n-1}}
 Substituting the values of \( a \) and \( b \):
 
 \[
-\frac{4 - 1}{2^{n-1}} \leq 10^{-3}
+\frac{2 - 1}{2^{n-1}} \leq 10^{-3}
 \]
 
 This simplifies to:
 
 \[
-\frac{3}{2^{n-1}} \leq 0.001
+\frac{1}{2^{n-1}} \leq 0.001
 \]
 
 We need to solve for \( n \):
 
 \[
-2^{n-1} \geq 3000
+2^{n-1} \geq 1000
 \]
 
 Taking the logarithm on both sides:
 
 \[
-n - 1 \geq \log_2(3000)
+n - 1 \geq \log_2(1000)
 \]
 
 Calculating:
 
 \[
-n \geq \log_2(3000) + 1
+n \geq \log_2(1000) + 1
 \]
 
 \[
-n \approx 12.55 + 1 \approx 13
+n  \approx 14
 \]
 
 ### Conclusion:

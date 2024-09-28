@@ -1,1 +1,0 @@
-# Salveeeee alterações via bash

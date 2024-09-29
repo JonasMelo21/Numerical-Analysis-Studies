@@ -1,3 +1,17 @@
+/*
+    Created by Jonas H. Melo on 2024/09/28
+    This file is protected under MIT license
+
+    This code is part of my studies in numerical analysis,
+    following Section 3 of Chapter 2 in the book "Numerical Analysis"
+    by Richard L. Burden and J. Douglas Faires, 11th edition.
+
+    Approach: Let's use Newton's, Secant and False Position methods 
+    to find p3 for the equation f(x) = x^2 - 6 with
+    p0 = 3 and p1 = 2.
+*/
+
+
 #include<stdio.h>
 #include<math.h>
 
@@ -36,6 +50,7 @@ int main() {
     int k = 2;
     while(k <= 3) {
         p = p1 - (f(p1) * (p1 - p0)) / (f(p1) - f(p0));
+        
 
         // Verificar onde a raiz está e atualizar os limites
         if(f(p) * f(p0) < 0) {

@@ -10,4 +10,4 @@ Solutions:
  
  [letter C](ex05c.c)
  
- [letter B](ex05d.c)
+ [letter D](ex05d.c)

@@ -1,3 +1,16 @@
+/*
+    Created by Jonas H. Melo on 2024/09/29
+    This file is protected under MIT license
+
+    This code is part of my studies in numerical analysis,
+    following Section 3 of Chapter 2 in the book "Numerical Analysis"
+    by Richard L. Burden and J. Douglas Faires, 11th edition.
+
+    Approach: Let's use Newton's, Secant and False Position methods 
+    to find p3 for the equation f(x) = -x^3 - cos(x) with
+    p0 = -1 and p1 = 0.
+*/
+
 #include<stdio.h>
 #include<math.h>
 

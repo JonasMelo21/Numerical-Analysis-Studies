@@ -4,6 +4,9 @@
 
 Solutions:
  [letter A](ex05a.c)
+ 
  [letter B](ex05b.c)
+ 
  [letter C](ex05c.c)
+ 
  [letter B](ex05d.c)

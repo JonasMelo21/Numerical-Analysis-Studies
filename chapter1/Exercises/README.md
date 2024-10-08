@@ -1,0 +1,83 @@
+# Exercises:
+
+Selecting the exercise number will redirect the page to the solution.
+
+[Exercise 01](Ex_1/)
+
+![ex1](Ex_1/imagem.png)
+
+[Exercise 02](Ex_2/)
+
+![ex2](Ex_2/imagem.png)
+
+[Exercise 03](Ex_3/)
+
+![ex3](Ex_3/image.png)
+
+[Exercise 04](Ex_4/)
+
+![ex4](Ex_4/image.png)
+
+[Exercise 05](Ex_5/)
+
+![ex5](Ex_5/image.png)
+
+[Exercise 06](Ex_6/)
+
+![ex6](Ex_6/image.png)
+
+[Exercise 07](Ex_7/)
+
+![ex7](Ex_7/image.png)
+
+[Exercise 08](Ex_8/)
+
+![ex8](Ex_8/image.png)
+
+[Exercise 09](Ex_9/)
+
+![ex9](Ex_9/image.png)
+
+[Exercise 10](Ex_10/)
+
+![ex10](Ex_10/image.png)
+
+[Exercise 11](Ex_11/)
+
+![ex11](Ex_11/image.png)
+
+[Exercise 12](Ex_12/)
+
+![ex12](Ex_12/image.png)
+
+[Exercise 13](Ex_13/)
+
+![ex13](Ex_13/image.png)
+
+[Exercise 14](Ex_14/)
+
+![ex14](Ex_14/image.png)
+
+[Exercise 15](Ex_15/)
+
+![ex15](Ex_15/image.png)
+
+[Exercise 16](Ex_16/)
+
+![ex16](Ex_16/image.png)
+
+[Exercise 17](Ex_17/)
+
+![ex17](Ex_17/image.png)
+
+[Exercise 18](Ex_18/)
+
+![ex18](Ex_18/image.png)
+
+[Exercise 19](Ex_19/)
+
+![ex19](Ex_19/image.png)
+
+[Exercise 20](Ex_20/)
+
+![ex20](Ex_20/image.png)

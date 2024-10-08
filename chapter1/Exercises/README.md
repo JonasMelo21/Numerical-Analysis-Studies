@@ -65,19 +65,3 @@ Selecting the exercise number will redirect the page to the solution.
 [Exercise 16](Ex_16/)
 
 ![ex16](Exa_16/image.png)
-
-[Exercise 17](Ex_17/)
-
-![ex17](Ex_17/image.png)
-
-[Exercise 18](Ex_18/)
-
-![ex18](Ex_18/image.png)
-
-[Exercise 19](Ex_19/)
-
-![ex19](Ex_19/image.png)
-
-[Exercise 20](Ex_20/)
-
-![ex20](Ex_20/image.png)

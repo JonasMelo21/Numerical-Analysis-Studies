@@ -46,25 +46,25 @@ Selecting the exercise number will redirect the page to the solution.
 
 ![ex11](Ex_11/image.png)
 
-[Exercise 12](Ex_12/)
+[Exercise 12](Exa_12/)
 
-![ex12](Ex_12/image.png)
+![ex12](Exa_12/image.png)
 
-[Exercise 13](Ex_13/)
+[Exercise 13](Exa_13/)
 
-![ex13](Ex_13/image.png)
+![ex13](Exa_13/image.png)
 
-[Exercise 14](Ex_14/)
+[Exercise 14](Exa_14/)
 
-![ex14](Ex_14/image.png)
+![ex14](Exa_14/image.png)
 
-[Exercise 15](Ex_15/)
+[Exercise 15](Exa_15/)
 
-![ex15](Ex_15/image.png)
+![ex15](Exa_15/image.png)
 
 [Exercise 16](Ex_16/)
 
-![ex16](Ex_16/image.png)
+![ex16](Exa_16/image.png)
 
 [Exercise 17](Ex_17/)
 

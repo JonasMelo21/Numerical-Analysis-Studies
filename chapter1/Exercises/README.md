@@ -8,7 +8,7 @@ Selecting the exercise number will redirect the page to the solution.
 
 [Exercise 02](Ex_2/)
 
-![ex2](Ex_2/imagem.png)
+![ex2](Ex_2/imagem.jpg.png)
 
 [Exercise 03](Ex_3/)
 

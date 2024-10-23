@@ -1,5 +1,5 @@
 /*
-    Created by Jonas H. Melo on 2024/10/06
+    Created by Jonas H. Melo on 2024/10/23
     This file is protected under MIT license
 
     This code is part of my studies in numerical analysis,
@@ -7,27 +7,28 @@
     by Richard L. Burden and J. Douglas Faires, 11th edition.
 
     Approach: Let's use Secant's method to find root 
-    of  the equation f(x) = x^3 - 2x^2 -5 = 0  
-    within [1,4] with 4 digits of accuracy.
+    of  the equation f(x) = x − 0.8 − 0.2*sin(x) = 0  
+    within [0, π/2] with 4 digits of accuracy.
 */
 
-#include<math.h>
 #include<stdio.h>
+#include<math.h> 
 
 double f(double x){
-    return pow(x,3) - 2*pow(x,2) - 5;
+    return x - 0.8 - 0.2 * sin(x);
 }
 
 int main(){
-    double tolerance = pow(10,-4);
-    double p0 = 1;
-    double p1 = 4;
+    double pi = 3.14159265359;
+    double p0 = 0;
+    double p1 = pi / 2;
     double p;
     int i = 2;
     int maxIteractions = 50;
+    double tol = pow(10,-4);
     while(i <= maxIteractions){
         p = p1 - (f(p1) * (p1 - p0)) / (f(p1) - f(p0));
-        if(fabs(p - p1) < tolerance){
+        if(fabs(p - p1) < tol){
             printf("\nMethod executed successfully after %d iteractions",i);
             printf("\nRoot: %.5f",p);
             break;
@@ -37,8 +38,7 @@ int main(){
         i++;
     }
     if(i > maxIteractions){
-        printf("Method failed");
+        printf("Method failed. Root found so far: %.4f",p);
     }
     return 0;
-
 }

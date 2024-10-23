@@ -7,21 +7,21 @@
     by Richard L. Burden and J. Douglas Faires, 11th edition.
 
     Approach: Let's use Secant's method to find root 
-    of  the equation f(x) = x^3 - 2x^2 -5 = 0  
-    within [1,4] with 4 digits of accuracy.
+    of  the equation f(x) = e^x + 2^−x + 2*cos(x) − 6 = 0 
+    within [1,2] with 4 digits of accuracy.
 */
 
 #include<math.h>
 #include<stdio.h>
-
+# define e M_E
 double f(double x){
-    return pow(x,3) - 2*pow(x,2) - 5;
+    return pow(e,x) + pow(2,-x) + 2*cos(x) - 6;
 }
 
 int main(){
     double tolerance = pow(10,-4);
     double p0 = 1;
-    double p1 = 4;
+    double p1 = 2;
     double p;
     int i = 2;
     int maxIteractions = 50;

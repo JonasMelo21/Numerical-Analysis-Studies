@@ -7,21 +7,21 @@
     by Richard L. Burden and J. Douglas Faires, 11th edition.
 
     Approach: Let's use Secant's method to find root 
-    of  the equation f(x) = x^3 - 2x^2 -5 = 0  
-    within [1,4] with 4 digits of accuracy.
+    of  the equation f(x) = ln(x − 1) + cos(x − 1) = 0 
+    within [1.3,2] with 4 digits of accuracy.
 */
 
 #include<math.h>
 #include<stdio.h>
 
 double f(double x){
-    return pow(x,3) - 2*pow(x,2) - 5;
+    return log(x-1) + cos(x - 1);
 }
 
 int main(){
     double tolerance = pow(10,-4);
-    double p0 = 1;
-    double p1 = 4;
+    double p0 = 1.3;
+    double p1 = 2;
     double p;
     int i = 2;
     int maxIteractions = 50;

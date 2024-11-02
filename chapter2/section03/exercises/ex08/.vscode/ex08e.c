@@ -7,15 +7,15 @@
     by Richard L. Burden and J. Douglas Faires, 11th edition.
 
     Approach: We're gonna use Secant method with 5 digits of accuracy 
-    to find solutions for sin(x) − exp(-x) = 0 for 0 ≤ x ≤ 1 and 3 ≤ x ≤ 4 and 6 ≤ x ≤ 7
+    to find solutions for e^x − 3x^2 = 0 for 0 ≤ x ≤ 1 and 3 ≤ x ≤ 5
 */
 
 #include <stdio.h>
 #include <math.h>
 
-// Define the function f(x) = sin(x) - exp(-x)
-double f(double x){
-    return sin(x) - exp(-x);
+// Define the function f(x) = e^x - 3x^2
+double f(double x) {
+    return exp(x) - 3 * pow(x, 2);
 }
 
 // Implement the Secant Method
@@ -52,42 +52,28 @@ int main() {
     int max = 50;        // Maximum number of iterations
     double solution1;
 
-    // Solve for sin(x) - exp(-x) in the interval [0, 1] using the Secant method
+    // Solve for e^x - 3x^2 = 0 in the interval [0, 1] using the Secant method
     solution1 = secantMethod(a, b, tol, max);
     if (solution1 != -1) {
         // Print solution if found
-        printf("\n\nSolution for sin(x) - exp(-x) = 0 for [0,1]: %.5f", solution1);
+        printf("\n\nSolution for e^x - 3x^2 = 0 for [0,1]: %.5f", solution1);
     } else {
         // Print failure message if method did not converge
-        printf("\nMethod failed for sin(x) - exp(-x) = 0 for [0,1]");
+        printf("\nMethod failed for e^x - 3x^2 = 0 for [0,1]");
     }
 
     double c = 3;        // Interval start for second solution
-    double d = 4;        // Interval end for second solution
+    double d = 5;        // Interval end for second solution
     double solution2;
 
-    // Solve for sin(x) - exp(-x) in the interval [3, 4] using the Secant method
+    // Solve for e^x - 3x^2 = 0 in the interval [3, 5] using the Secant method
     solution2 = secantMethod(c, d, tol, max);
     if (solution2 != -1) {
         // Print solution if found
-        printf("\n\nSolution for sin(x) - exp(-x) within [3,4]: %.5f", solution2);
+        printf("\n\nSolution for exp(x) - 3x^2 = 0 within [3,5]: %.5f", solution2);
     } else {
         // Print failure message if method did not converge
-        printf("\nMethod failed for sin(x) - exp(-x) within [3,4]");
-    }
-
-    double e = 6;        // Interval start for second solution
-    double f = 7;        // Interval end for second solution
-    double solution3;
-
-    // Solve for sin(x) - exp(-x) in the interval [6, 7] using the Secant method
-    solution3 = secantMethod(e, f, tol, max);
-    if (solution3 != -1) {
-        // Print solution if found
-        printf("\n\nSolution for sin(x) - exp(-x) within [6,7]: %.5f", solution3);
-    } else {
-        // Print failure message if method did not converge
-        printf("\nMethod failed for sin(x) - exp(-x) within [6,7]");
+        printf("\nMethod failed for exp(x) - 3x^2 = 0 within [3,5]");
     }
 
     return 0;

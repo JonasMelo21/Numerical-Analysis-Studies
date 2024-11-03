@@ -28,11 +28,11 @@ Selecting the exercise number will redirect the page to the solution.
 
 [Exercise 07](ex07/)
 
-![ex7](ex07/image.png)
+![ex7](ex07/image1.png)
 
 [Exercise 08](ex08/)
 
-![ex8](ex08/image.png)
+![ex8](ex08/image1.png)
 
 [Exercise 09](ex09/)
 

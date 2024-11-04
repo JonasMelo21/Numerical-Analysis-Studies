@@ -7,8 +7,8 @@
     by Richard L. Burden and J. Douglas Faires, 11th edition.
 
     Approach: We're gonna use False Position Method with 5 digits of accuracy 
-    to find solutions for e^x − 3x^2 = 0 
-    for 0 <= x <= 1 and 3 <= x <= 5
+    to find solutions for for sin(x) - exp(-x) = 0 
+    for 0 ≤ x ≤ 1, 3 ≤ x ≤ 4 and 6 ≤ x ≤ 7
 
 */
 
@@ -17,7 +17,7 @@
 
 // Define the function f(x) = ln(x - 1) + cos(x - 1)
 double f(double x) {
-    return exp(x) - 3*pow(x,2);;
+    return sin(x) - exp(-x);
 }
 
 // Implement the False Position Method
@@ -65,20 +65,32 @@ int main() {
 
     // Check if the solution was found and display it
     if (solution != -1) {
-        printf("\nSolution for x^3 + 3x^2 - 1 = 0 within [%.lf, %.lf] is %lf",p0,p1, solution);
+        printf("\nSolution for sin(x) - exp(-x) = 0 within [%.lf, %.lf] is %lf",p0,p1, solution);
     } else {
         // Print failure message if the method did not converge
         printf("The method did not converge\n");
     }
 
-    // Next interval [3,5]
+    // Next interval [3,4]
     double a0 = 3;        // Start of the interval
-    double a1 = 5;        // End of the interval
+    double a1 = 4;        // End of the interval
     double solution2 = falsePosition(a0, a1, tol, max);
 
     // Check if the solution was found and display it
     if (solution2 != -1) {
-        printf("\nSolution for x^3 + 3x^2 - 1 = 0 within [%.lf, %.lf] is %lf",a0,a1, solution2);
+        printf("\nSolution for sin(x) - exp(-x) = 0 within [%.lf, %.lf] is %lf",a0,a1, solution2);
+    } else {
+        // Print failure message if the method did not converge
+        printf("\nThe method did not converge\n\n");
+    }
+
+    double b0 = 6;        // Start of the interval
+    double b1 = 7;        // End of the interval
+    double solution3 = falsePosition(b0, b1, tol, max);
+
+    // Check if the solution was found and display it
+    if (solution3 != -1) {
+        printf("\nSolution for sin(x) - exp(-x) = 0 within [%.lf, %.lf] is %lf",b0,b1, solution3);
     } else {
         // Print failure message if the method did not converge
         printf("\nThe method did not converge\n\n");

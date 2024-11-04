@@ -70,7 +70,7 @@ int main() {
         printf("The method did not converge\n");
     }
 
-    // Next interval [3,4]
+
     p0 = exp(1);        // Start of the interval
     p1 = 4;        // End of the interval
     double solution2 = falsePosition(p0, p1, tol, max);

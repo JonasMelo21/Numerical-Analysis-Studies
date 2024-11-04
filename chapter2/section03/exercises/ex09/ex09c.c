@@ -59,7 +59,7 @@ int main() {
 
     // Check if the method succeeded and print the result
     if (result == -1) {
-        printf("Method failed after %d iterations\n", maxIteractions);
+        printf("Method failed\n");
     } else {
         printf("The root for the equation x - cos(x) = 0 within [0, π/2] is %.5lf\n", result);
     }

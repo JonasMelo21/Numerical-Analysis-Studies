@@ -41,14 +41,14 @@ double newtonMethod(double p0, int maxIteractions, double tolerance){
 }
 
 int main(){
-    double solution1 = newtonMethod(0,50,pow(10,-5));
+    double solution1 = newtonMethod(1,50,pow(10,-5));
     if(solution1 != -1){
-        printf("\nSolution for (x - 2)^2 - ln(x) = 0 for 1 <= x <= 2: %.5f\n",solution1);
+        printf("Solution for x^3 + 3x^2 - 1 = 0 for 0 <= x <= 1: %.5f\n",solution1);
     }
 
     double solution2 = newtonMethod(5,50,pow(10,-5));
     if(solution1 != -1){
-        printf("Solution for (x - 2)^2 - ln(x) = 0 for e <= x <= 4: %.5f\n",solution2);
+        printf("Solution for x^3 + 3x^2 - 1 = 0 for 3 <= x <= 5: %.5f\n",solution2);
     }
     
     return 0;

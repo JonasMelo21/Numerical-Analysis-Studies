@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/jonas/OneDrive/Documentos/Estudos/CalculoNumerico/codes/chapter2/section03/exercises/ex04",
-      "program": "c:/Users/jonas/OneDrive/Documentos/Estudos/CalculoNumerico/codes/chapter2/section03/exercises/ex04/build/Debug/outDebug",
+      "cwd": "c:/Users/jonas/OneDrive/Documentos/Estudos/CalculoNumerico/codes/chapter2/section03/exercises/ex06",
+      "program": "c:/Users/jonas/OneDrive/Documentos/Estudos/CalculoNumerico/codes/chapter2/section03/exercises/ex06/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

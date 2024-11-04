@@ -24,7 +24,7 @@ The code for the algorithm implementation is [here](ex09b.c)
 
 ## Solution Letter C:
 
-The plot indicates that the root is approximately 1.75
+The plot indicates that the root is approximately 0.5 AND 1
 The code for the algorithm implementation is [here](ex09c.c)
 
 ![plot](plotC1.png)

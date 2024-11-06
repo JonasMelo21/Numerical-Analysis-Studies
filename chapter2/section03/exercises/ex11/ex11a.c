@@ -6,18 +6,18 @@
     following Section 3 of Chapter 2 in the book "Numerical Analysis"
     by Richard L. Burden and J. Douglas Faires, 11th edition.
 
-    Approach: We're gonna use all methods in this section to find the solution for 2*x + 3*cos(x) - exp(x) = 0 for 0 ≤ x ≤ 1
+    Approach: We're gonna use all methods in this section to find the solution for 3x*e^x = 0 for 1 ≤ x ≤ 2
 */
 
 #include<stdio.h>
 #include<math.h>
 
 double f(double x){
-    return 2*x + 3*cos(x) - exp(x);
+    return 3*x*exp(x);
 }
 
 double derivative_f(double x){
-    return 2 -3*sin(x) - exp(x);
+    return 3*exp(x) + 3*x*exp(x);
 }
 
 double newtonMethod(double p0, double tol,int maxIteractions){
@@ -75,12 +75,12 @@ double falsePosition(double p0,double p1,double tol,int maxIteractions){
 }
 
 int main(){
-    double p0 = 0;
-    double p1 = 1;
+    double p0 = 1;
+    double p1 = 2;
     double tol = pow(10,-5);
     int maxIteractions = 30;
 
-    double solution1 = newtonMethod(1,tol,maxIteractions);
+    double solution1 = newtonMethod(p0,tol,maxIteractions);
     double solution2 = secantMethod(p0,p1,tol,maxIteractions);
     double solution3 = falsePosition(p0,p1,tol,maxIteractions);
     if(solution1 != -1){

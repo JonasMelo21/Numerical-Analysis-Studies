@@ -103,11 +103,11 @@ int main(){
     }
 
     // Output:
-    // Newton method executed successfully after 7 iteractions
-    // Secant method executed successfully after 10 iteractions
+    // Newton method executed successfully after 5 iteractions
+    // Secant method executed successfully after 7 iteractions
     // False position method executed successfully after 2 iteractions
-    // Solution for 3*x*exp(x) = 0 is: 0.00000
-    // Solution for 3*x*exp(x) is: 0.00000
-    // False position method for 3*x*exp(x) is: 0.77460
+    // Solution for 3*x*exp(x) = 0 by Newton Method is: 1.23971
+    // Solution for 3*x*exp(x) by Secant Method is: 1.23971
+    // False position method for 3*x*exp(x) is: 1.82253
     return 0;
 }

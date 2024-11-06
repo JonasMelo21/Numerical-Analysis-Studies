@@ -1,6 +1,6 @@
 # Exercise 10
 
-![ex](image1.png)
+![ex](image.png)
 
 ![ex](image2.png)
 

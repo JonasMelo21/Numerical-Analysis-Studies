@@ -1,5 +1,5 @@
 /*
-    Created by Jonas H. Melo on 2024/11/9
+    Created by Jonas H. Melo on 2024/11/15
     This file is protected under MIT license
 
     This code is part of my studies in numerical analysis,

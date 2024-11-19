@@ -37,6 +37,4 @@ That's why Newton Method doesn't work, because of the division by 0 error.
 
 
 
-Implementation with [p0 = 5π](ex16b.c)
-
-Implementation with [p0 = 10π](ex16c.c)
+Implementation with all values for p0 (π/2, 5π, 10π) [here](ex16a.c)

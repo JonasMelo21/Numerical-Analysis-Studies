@@ -12,6 +12,7 @@ The roots are: -0.0407 and 0.9624
 Let's check if the algorithms give the same result -> [implementation here](ex17.c)
 
 Output:
+
     Newton Method executed successfully after 3 iteractions
     Solution with Newton Method: -0.04066
 

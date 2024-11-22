@@ -82,3 +82,10 @@ Selecting the exercise number will redirect the page to the solution.
 
 ![ex20](ex20/image.png)
 
+[Exercise 21](ex21/)
+
+![ex21](ex21/image.png)
+
+[Exercise 22](ex22/)
+
+![ex22](ex22/image.png)

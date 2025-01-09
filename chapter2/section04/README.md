@@ -57,10 +57,3 @@ which simplifies to:
 M(p_{n-1}) = \frac{f(p_{n-1}) \cdot f'(p_{n-1})}{\left[f'(p_{n-1})\right]^2 - f(p_{n-1}) \cdot f''(p_{n-1})}.
 \]
 
-## Repository Structure
-
-This repository contains a folder for each chapter of the **Numerical Analysis** project. Each chapter is further divided into sections. Every section includes:
-1. A `README.md` summarizing the concepts covered in the section.
-2. A link to the exercises with their respective solutions.
-
-### Example:

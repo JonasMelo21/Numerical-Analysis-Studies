@@ -1,6 +1,9 @@
+
 # Error Analysis for Iterative Methods
 
 This section explores how to evaluate the **order of convergence** of an iterative method. But what exactly is the **order of convergence**?
+
+---
 
 ## Order of Convergence
 
@@ -23,16 +26,22 @@ where:
 
 The higher the value of \( A \), the faster the method converges to \( p \). 
 
+---
+
 ## Examples of Convergence
 
 ### Bisection Method
 The **Bisection Method** has **linear convergence** (\( A = 1 \)). It is one of the slowest iterative methods.
+
+---
 
 ### Newton's Method
 The **Newton Method** can achieve **quadratic convergence** (\( A = 2 \)) under the following conditions:
 1. \( f(p) = 0 \),
 2. \( f'(p) \neq 0 \),
 3. The initial approximation \( p_0 \) lies within an interval \( [p - K, p + K] \), where \( K > 0 \).
+
+---
 
 ### Modified Newton Method
 The **Modified Newton Method** is an alternative to Newton's Method for functions with multiple roots. It effectively applies Newton's Method to itself.
@@ -56,4 +65,3 @@ which simplifies to:
 \[
 M(p_{n-1}) = \frac{f(p_{n-1}) \cdot f'(p_{n-1})}{\left[f'(p_{n-1})\right]^2 - f(p_{n-1}) \cdot f''(p_{n-1})}.
 \]
-

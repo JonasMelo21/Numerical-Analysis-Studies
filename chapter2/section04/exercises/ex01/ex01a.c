@@ -163,5 +163,21 @@ int main(){
     if(!(modifiedNewtonSolution == -1)){
         printf("Modified Newton Method Solution: %.5f");
     }
+
+    /*Output:
+        Newton Method Success (17 iterations): p0 = 0.00000
+        Newton Method Solution: 0.56714
+
+        Secant Method Success (3 iterations): p0 = 0.00000, p1 = 1.00000
+        Secant Method Solution: 0.85062
+
+        False Position Success (2 iterations): p0 = 0.00000, p1 = 1.00000
+        False Position Solution: 0.85062
+
+        Bisection Method not applicable for [0.00, 1.00]
+
+        Modified Newton Method executed successfully after 8 iterations for x^2 - 2*x*e^-x + e^-2x = 0 with p0 = 0.00000.
+        Modified Newton Method Solution: 0.00000
+    */
     return 0;
 }

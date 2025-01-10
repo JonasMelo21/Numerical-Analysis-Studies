@@ -6,11 +6,11 @@
 
 ![plot](plot.png)
 
-The plot above shows that the solutions are
+The plot above shows that the solution is close to 0.6
 
 ## Solutions:
 
-    - [Letter A Solution:](ex01a.c)
+    - [Letter A](ex01a.c)
         
     - [Letter B](ex01b.c)
     - [Letter C](ex01c.c)

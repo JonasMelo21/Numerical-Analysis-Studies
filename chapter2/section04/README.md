@@ -24,7 +24,10 @@ where:
 - $\( B $\) is the asymptotic error constant.
 
 The higher the value of \( A \), the faster the method converges to $\( p \)$. 
-
+### Example:
+The following table shows how fast the quadratically convergence is compared to linear
+![img](image.png)
+Notice that the 3th term of the quadratically convergence series is equal to the 7th term of the linear...Curiosity: The last term of the quadratically convergent series (n = 7) is equal to the 126th term of the linear convergent series.
 ---
 
 ## Examples of Convergence
@@ -64,3 +67,7 @@ which simplifies to:
 $$
 M(p_{n-1}) = \frac{f(p_{n-1}) \cdot f'(p_{n-1})}{\left[f'(p_{n-1})\right]^2 - f(p_{n-1}) \cdot f''(p_{n-1})}.
 $$
+
+## Exercises Solved
+
+here is the folder containing the solved exercises of this section ---> [exercises](exercises/)

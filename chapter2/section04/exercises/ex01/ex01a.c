@@ -1,11 +1,21 @@
 /*
-    Created by Jonas H. Melo on 2025/01/10 (YYYY/MM/DD)
-    This file is protected under the MIT License.
+    Created by Jonas H. Melo on 2024/07/31
+    This file is protected under MIT license
 
-    Numerical analysis program using various root-finding methods to solve:
-    x^2 - 2*x*e^-x + e^-2x = 0, for 0 ≤ x ≤ 1.
+    This code is part of my studies in numerical analysis,
+    following Section 1 of Chapter 2 in the book "Numerical Analysis"
+    by Richard L. Burden and J. Douglas Faires, 11th edition.
+
+    Approach: The question title tells us to use Newton Method to find the solution for
+    x^2 − 2*x*e^−x + e^−2x = 0, for 0 ≤ x ≤ 1 with 5 digits of accuracy. 
+    But we're gnna go further and compare the performance of all root finding methods studied so far, which are:
+    -   Traditional Newton Method
+    -   Bisection Method
+    -   Secant Method
+    -   False Position Method
+    -   Modified Newton Method
+
 */
-
 #include<math.h>
 #include<stdio.h>
 

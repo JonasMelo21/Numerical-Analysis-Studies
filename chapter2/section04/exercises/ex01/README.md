@@ -5,10 +5,10 @@
 
 ## Solutions:
 
-[Letter A](ex01a/ex01a.c)
+[Letter A](ex01a/)
 
-[Letter B](ex01b/ex01b.c)
+[Letter B](ex01b/)
 
-[Letter C](ex01c/ex01c.c)
+[Letter C](ex01c/)
 
-[Letter D](ex01d/ex01d.c)
+[Letter D](ex01d/)

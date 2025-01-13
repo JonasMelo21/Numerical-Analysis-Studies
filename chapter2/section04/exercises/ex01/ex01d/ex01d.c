@@ -1,13 +1,15 @@
 /*
-    Created by Jonas H. Melo on 2025/01/12
+    Created by Jonas H. Melo on 2025/01/13
     This file is protected under MIT license
 
     This code is part of my studies in numerical analysis,
     following Section 1 of Chapter 2 in the book "Numerical Analysis"
     by Richard L. Burden and J. Douglas Faires, 11th edition.
 
-    Approach: The question title tells us to use Newton Method to find the solution for
-    x^2 − 2*x*e^−x + e^−2x = 0, for 0 ≤ x ≤ 1 with 5 digits of accuracy. 
+    Approach: 
+    The question title tells us to use Newton Method to find the solution for
+        e^6x + 3*(ln 2)^2*e^2*x - (ln 8)*e^4x - (ln 2)^3 = 0, 
+    For -1 ≤ x ≤ 0, 
     But we're gnna go further and compare the performance of all root finding methods studied so far, which are:
     -   Traditional Newton Method
     -   Bisection Method
@@ -21,34 +23,35 @@
 
 //  Function
 double f(double x){
-    return pow(x, 2) - 2 * x * exp(-x) + exp(-2 * x);
+    return exp(6*x) + 3*pow(log(2),2) * exp(2*x) - (log(8)*exp(4*x)) - pow(log(2),3);
 }
 
 // First Derivative
-double derivative(double x){
-    return 2 * x - 2 * exp(-x) * (1 - x) - 2 * exp(-2 * x);
+double derivative(double x) {
+    return 6*exp(6*x) + 6*pow(log(2),2)*exp(2*x) - 16*log(8)*exp(4*x);
 }
 
 // Second Derivative for Modified Newton Method
-double secondDerivative(double x){
-    return 2 + 2 * exp(-x) * (1 - 2 * x) - 4 * exp(-2 * x);
+double secondDerivative(double x) {
+    return 36*exp(6*x) + 12*pow(log(2),2)*exp(2*x) - 16*log(8)*exp(4*x);
 }
 
-// Newton's method
-double newtonMethod(double tolerance, int maxIteractions, double p0){
-    double a0 = p0, p;
-    int i = 1;
 
+// Newton's method
+double newtonMethod(double p0,double tolerance, int maxIteractions){
+    double a0 = p0;
+    double p;
+    int i = 1;
     while(i <= maxIteractions){
-        p = a0 - (f(a0) / derivative(a0));
-        if(p - a0 < tolerance || f(p) == 0){ // Convergence check
-            printf("\nNewton Method Success (%d iterations): p0 = %.5f\n", i, p0);
+        p = a0 - (f(a0)) / (derivative(a0));
+        if( fabs(p - a0) < tolerance || f(p) == 0){
+            printf("\nTraditional Newton Method Success (%d iteractions)",i);
             return p;
         }
         a0 = p;
         i++;
     }
-    return -1; // Fail
+    return -1;
 }
 
 double modifiedNewton(double p0, double tolerance, int maxIterations) {
@@ -72,7 +75,7 @@ double modifiedNewton(double p0, double tolerance, int maxIterations) {
 
         // Check convergence
         if (fabs(p - a0) < tolerance || fabs(f(p)) < tolerance) {
-            printf("\nModified Newton Method executed successfully after %d iterations for x^2 - 2*x*e^-x + e^-2x = 0 with p0 = %.5f.\n", i, p0);
+            printf("\nModified Newton Method Success (%d iterations): p0 = %.5f\n", i, p0);
             return p;
         }
 
@@ -93,7 +96,7 @@ double secantMethod(double p0, double p1, double tolerance, int maxIteractions){
 
     while(i <= maxIteractions){
         p = a1 - (f(a1) * (a1 - a0)) / (f(a1) - f(a0)); // Secant formula
-        if(p - a1 < tolerance || f(p) == 0){ // Convergence check
+        if(fabs(p - a1) < tolerance || f(p) == 0){ // Convergence check
             printf("\nSecant Method Success (%d iterations): p0 = %.5f, p1 = %.5f\n", i, p0, p1);
             return p;
         }
@@ -111,7 +114,7 @@ double falsePosition(double p0, double p1, double tolerance, int maxIteractions)
 
     while(i <= maxIteractions){
         p = a1 - (f(a1) * (a1 - a0)) / (f(a1) - f(a0)); // False position formula
-        if(p - a1 < tolerance || f(p) == 0){ // Convergence check
+        if(fabs(p - a1) < tolerance || f(p) == 0){ // Convergence check
             printf("\nFalse Position Success (%d iterations): p0 = %.5f, p1 = %.5f\n", i, p0, p1);
             return p;
         }
@@ -147,13 +150,16 @@ double bisectionMethod(double a, double b, double tolerance, int maxIteractions)
 
 int main(){
     double tolerance = pow(10, -5);
-    int maxIteractions = 50;
-    double p0 = 0, p1 = 1;
+    int maxIteractions = 10000;
+    double p0 = -1, p1 = 0;
 
     // Test Newton's method
-    double newtonSolution = newtonMethod(tolerance, maxIteractions, p0);
-    if(newtonSolution != -1) printf("Newton Method Solution: %.5f\n", newtonSolution);
-
+    double newtonSolution = newtonMethod(p0,tolerance, maxIteractions);
+    if(newtonSolution != -1){
+        printf("\nNewton Method Solution: %.5f\n", newtonSolution);
+    }else{
+        printf("\nTraditional Newton Method Failed\n");
+    }
     // Test Secant method
     double secantSolution = secantMethod(p0, p1, tolerance, maxIteractions);
     if(secantSolution != -1) printf("Secant Method Solution: %.5f\n", secantSolution);
@@ -167,27 +173,27 @@ int main(){
     if(bisectionSolution != -1) printf("Bisection Solution: %.5f\n", bisectionSolution);
 
     // Test Modified Newton Method
-    p0 = 0;
-    p1 = 1;
     double modifiedNewtonSolution = modifiedNewton(p0,tolerance,maxIteractions);
     if(!(modifiedNewtonSolution == -1)){
         printf("Modified Newton Method Solution: %.5f");
     }
 
-    /*Output:
-        Newton Method Success (17 iterations): p0 = 0.00000
-        Newton Method Solution: 0.56714
+    /*Output
+    Traditional Newton Method Success (1507 iteractions)
+    Newton Method Solution: -0.20572
 
-        Secant Method Success (3 iterations): p0 = 0.00000, p1 = 1.00000
-        Secant Method Solution: 0.85062
+    Secant Method Success (29 iterations): p0 = -1.00000, p1 = 0.00000
+    Secant Method Solution: -0.18323
 
-        False Position Success (2 iterations): p0 = 0.00000, p1 = 1.00000
-        False Position Solution: 0.85062
+    False Position Success (424 iterations): p0 = -1.00000, p1 = 0.00000
+    False Position Solution: -0.17411
 
-        Bisection Method not applicable for [0.00, 1.00]
+    Bisection Method Success (18 iterations): Interval [-1.00000, 0.00000]
+    Bisection Solution: -0.18326
 
-        Modified Newton Method executed successfully after 8 iterations for x^2 - 2*x*e^-x + e^-2x = 0 with p0 = 0.00000.
-        Modified Newton Method Solution: 0.00000
+    Modified Newton Method Success (47 iterations): p0 = -1.00000
+    Modified Newton Method Solution: 0.00000
     */
+
     return 0;
 }

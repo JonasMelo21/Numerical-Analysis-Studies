@@ -1,5 +1,5 @@
 /*
-    Created by Jonas H. Melo on 2025/01/12
+    Created by Jonas H. Melo on 2025/01/13
     This file is protected under MIT license
 
     This code is part of my studies in numerical analysis,
@@ -8,7 +8,7 @@
 
     Approach: 
     The question title tells us to use Newton Method to find the solution for
-        x^2 + 6x^5 + 9x^4 − 2x^3 − 6x^2 + 1 = 0, 
+        sin(3*x) + 3 * exp(-2*x) * sin(x) - 3 * exp(-x) * sin(2*x) - exp(-3*x) = 0, 
     For -3 ≤ x ≤ 0 with 5 digits of accuracy. 
     But we're gonna go further and compare the performance of all root finding methods studied so far, which are:
     -   Traditional Newton Method
@@ -21,19 +21,24 @@
 #include<math.h>
 #include<stdio.h>
 
-//  Function
-double f(double x){
-    return  6 * pow(x,5) + 9 * pow(x,4) - 2 * pow(x,3) - 5 * pow(x,2) + 1;
+double f(double x) {
+    return sin(3 * x) + 3 * exp(-2 * x) * sin(x) - 3 * exp(-x) * sin(2 * x) - exp(-3 * x);
 }
+
 
 // First Derivative
 double derivative(double x){
-    return 30 * pow(x,4) + 36 * pow(x,3) - 6 * pow(x,2) - 10 * x;
+    return 3 * cos(3 * x) - 6 * exp(-2 * x) * sin(x) + 3 * exp(-2 * x) + 3 * exp(-x) * sin(2 * x) - 3 * exp(-x) * cos(2 * x) + 3 * exp(-3 * x);
 }
 
 // Second Derivative for Modified Newton Method
 double secondDerivative(double x){
-    return 120 * pow(x,3) + 108 * pow(x,2) - 12 * x -10;
+    return -9 * sin(3 * x)
+           + 9 * exp(-2 * x) * sin(x)
+           -12 * exp(-2 * x) * cos(x)
+           + 3 * exp(-x) * sin(2 * x) 
+           + 9 * exp(-x) * cos(2 * x)
+           -9 * exp(-3) ;
 }
 
 // Newton's method
@@ -150,7 +155,7 @@ double bisectionMethod(double a, double b, double tolerance, int maxIteractions)
 int main(){
     double tolerance = pow(10, -5);
     int maxIteractions = 50;
-    double p0 = -3, p1 = 0;
+    double p0 = 3, p1 = 4;
 
     // Test Newton's method
     double newtonSolution = newtonMethod(tolerance, maxIteractions, p0);
@@ -177,16 +182,19 @@ int main(){
     }
 
     /*Output:
-        Newton Method Success (10 iterations): p0 = -3.00000
-        Newton Method Solution: -1.33435
+        Newton Method Success (5 iterations): p0 = 3.00000
+        Newton Method Solution: 3.14157
 
-        Secant Method Success (5 iterations): p0 = -3.00000, p1 = 0.00000
-        Secant Method Solution: -0.00417
+        Secant Method Success (15 iterations): p0 = 3.00000, p1 = 4.00000
+        Secant Method Solution: 4.20176
 
-        Bisection Method Success (20 iterations): Interval [-3.00000, 0.00000]
-        Bisection Solution: -1.33434
+        False Position Success (5 iterations): p0 = 3.00000, p1 = 4.00000
+        False Position Solution: 3.14157
 
-        Modified Newton Method Success (1 iterations) p0 = 0.00000.
+        Bisection Method Success (18 iterations): Interval [3.00000, 4.00000]
+        Bisection Solution: 3.14157
+
+        Modified Newton Method Success (35 iterations) p0 = 0.00000.
         Modified Newton Method Solution: 0.00000
     */
     return 0;

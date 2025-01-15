@@ -34,4 +34,4 @@ For large \( n \), this value approaches 1, which implies that \( C \geq 1 \). S
 
 ---
 
-**Conclusion**: The sequence \( \frac{1}{n^2} \) is **not** linearly convergent because it converges too quickly for a constant \( C < 1 \) to exist that satisfies the inequality.
+**Conclusion**: The sequence $\( \ frac{1}{n^2} \)$ is **not** linearly convergent because it converges too quickly for a constant \( C < 1 \) to exist that satisfies the inequality.

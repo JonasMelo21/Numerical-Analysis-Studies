@@ -59,7 +59,7 @@ double modifiedNewton(double p0, double tolerance, int maxIterations) {
     while (i <= maxIterations) {
         // Calculate the numerator and denominator separately
         double numerator = f(a0) * derivative(a0);
-        double denominator = pow(derivative(a0), 2) - f(a0) * secondDerivative(a0);
+        double denominator = (derivative(a0) * derivative(a0)) - f(a0) * secondDerivative(a0);
 
         // Check if the denominator is too small to avoid division by zero
         if (fabs(denominator) < 1e-10) {

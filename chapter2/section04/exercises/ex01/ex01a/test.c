@@ -3,17 +3,17 @@
 
 // Define the function f(x)
 double f(double x) {
-    return x * x - 2 * x * exp(-x) + exp(-2 * x);
+    return exp(6*x) + 1.441*exp(2*x) - 2.079*exp(4*x) - 0.3330;
 }
 
 // Define the first derivative f'(x)
 double f_prime(double x) {
-    return 2 * x - 2 * exp(-x) + 2 * x * exp(-x);
+    return 6*exp(6*x) + 2.882*exp(2*x) - 4.158*exp(4*x);
 }
 
 // Define the second derivative f''(x)
 double f_double_prime(double x) {
-    return 2 - 2 * exp(-x) + 2 * exp(-x) + 2 * x * exp(-x);
+    return 36*exp(6*x) + 5.764*exp(2*x) - 16.632*exp(4*x);
 }
 
 // Modified Newton Method
@@ -51,7 +51,7 @@ void modified_newton_method(double initial_guess, double tolerance, int max_iter
 int main() {
     double initial_guess = 0.5;  // Initial guess
     double tolerance = 1e-5;     // Convergence tolerance (5 digits of accuracy)
-    int max_iterations = 100;   // Maximum number of iterations
+    int max_iterations = 50;   // Maximum number of iterations
 
     printf("Modified Newton Method:\n");
     modified_newton_method(initial_guess, tolerance, max_iterations);

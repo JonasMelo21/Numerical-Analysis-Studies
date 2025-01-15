@@ -137,7 +137,7 @@ double bisectionMethod(double a, double b, double tolerance, int maxIteractions)
 
     while(i <= maxIteractions){
         p = (a0 + b0) / 2; // Midpoint
-        if(f(p) == 0 || (b0 - a0) < tolerance){ // Convergence check
+        if(f(p) == 0 || fabs(b0 - a0) < tolerance){ // Convergence check
             printf("\nBisection Method Success (%d iterations): Interval [%.5f, %.5f]\n", i, a, b);
             return p;
         }

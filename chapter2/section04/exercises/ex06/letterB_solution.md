@@ -1,6 +1,8 @@
-# Proof that $\( \frac{1}{n^2} \)$ is not linearly convergent
+# Letter B Solution
 
-To prove that the sequence $\( \frac{1}{n^2} \)$ is **not** linearly convergent, we need to show that it does not satisfy the inequality for linear convergence:
+## Proof that $\( \frac{1}{n^2} \)$ is  linearly convergent
+
+To prove that the sequence $\( \frac{1}{n^2} \)$ is linearly convergent, we need to show that it does not satisfy the inequality for linear convergence:
 
 $$
 |x_{n+1} + L| \leq C \cdot |x_n + L| \quad \text{with} \quad C < 1.
@@ -18,20 +20,30 @@ $$
 \frac{n^2}{(n+1)^2} \leq C
 $$
 
-Simplify $\( \frac{n^2}{(n+1)^2} \)$:
+Taking the square root on both sides:
 
 $$
-\frac{n^2}{(n+1)^2} = \frac{n^2}{n^2 + 2n + 1}.
+\frac{\sqrt{n^2}}{\sqrt{(n+1)^2}} = \frac{n}{n + 1} \leq \sqrt{C}.
 $$
 
-As $\( n \to \infty \)$, the fraction approaches:
+Which will raise a positive number less than 1. If $\frac{n}{n + 1}$ < 1, then C < 1.
+
+**Conclusion**: The sequence $\( \frac{1}{n^2} \)$ is linearly convergent.
+
+## How many iteractions to guarantee $\ |p_{n} - p| \leq 5 \cdot$
 
 $$
-\frac{n^2}{n^2 + 2n + 1} \approx 1 - \frac{2}{n} + \frac{1}{n^2}.
+\frac{1}{n^2} \leq 5 \cdot 10^{(-2)}
 $$
 
-For large $\( n \)$, this value approaches 1, which implies that $\( C \geq 1 \)$. Since $\( C < 1 \)$ is required for linear convergence, the sequence does not satisfy the condition for linear convergence.
+$$
+\frac{1}{5 \cdot 10^{(-2)}} \leq n^{2}
+$$
 
----
+$$
+20 \leq n^{2}
+$$
 
-**Conclusion**: The sequence $\( \frac{1}{n^2} \)$ is **not** linearly convergent because it converges too quickly for a constant $\( C < 1 \)$ to exist that satisfies the inequality.
+$$
+2 \cdot \sqrt{5} \leq n
+$$

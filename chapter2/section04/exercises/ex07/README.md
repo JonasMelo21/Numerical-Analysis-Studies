@@ -37,3 +37,22 @@ That means $\sqrt[k]{C} < 1$ which also means C < 1 and $\ p_{n}$ converges line
 
 
 ## Solution Letter B:
+For a pair of integers m and k let's find N suchch that:
+
+$$
+\frac{1}{N^k} < 10^{(-m)}
+$$
+
+$$
+\frac{1}{10^(-k)} < N^{k}
+$$
+
+$$
+\ 10^m < N^{k}
+$$
+
+Raising both sides to the power of 1/k:
+
+$$
+\ N > 10^{m/k}
+$$

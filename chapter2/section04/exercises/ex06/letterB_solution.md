@@ -1,4 +1,4 @@
-# Proof that \( \frac{1}{n^2} \) is not linearly convergent
+# Proof that $\( \frac{1}{n^2} \)$ is not linearly convergent
 
 To prove that the sequence $\( \frac{1}{n^2} \)$ is **not** linearly convergent, we need to show that it does not satisfy the inequality for linear convergence:
 

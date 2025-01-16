@@ -2,7 +2,7 @@
 
 ![image](image.png)
 
-## Solution:
+## Solution Letter A:
 
 Given a sequence $\ p_{n} = 1 / n^{k}$ where $\ p \to 0$ when $\ n \to \infty$. The convergence will be linearly if and only if
 $$
@@ -34,3 +34,6 @@ $$
 $$
 
 That means $\sqrt[k]{C} < 1$ which also means C < 1 and $\ p_{n}$ converges linearly to p.
+
+
+## Solution Letter B:

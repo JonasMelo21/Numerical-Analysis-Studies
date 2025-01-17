@@ -31,3 +31,28 @@ $$
 $$
 
 As $\alpha = 3$ , the sequence converges at order 3.
+
+
+## Solution Letter B:
+
+Let's find a sequence that converges at order $\alpha$.
+
+Let $\ p_{n} = 10^{- \alpha ^{n}}$. Then:
+
+$$
+| \ p_{n + 1} | = | 10^{-\alpha^{n+1}} |
+$$
+
+$$
+| \ p_{n + 1} | = | 10^{-\alpha^{n} \cdot \alpha^{1}} |
+$$
+
+$$
+| \ p_{n + 1} | = | (10^{-\alpha^{n}})^{\alpha} |
+$$
+
+$$
+| \ p_{n + 1} | = | \ p_{n} |^{\alpha}
+$$
+
+The sequence $\ p_{n} = 10^{- \alpha ^{n}}$ converges to 0 at order $\alpha$

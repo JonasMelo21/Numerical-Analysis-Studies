@@ -4,7 +4,7 @@
 
 ## Solution Letter A:
 
-Let $\ p_{n} = 10^{-3^{n}}$. Then:
+Let $\ p_{n} = 10^{-3^{n}}$. Then the sequence will converge at order 3 if $\alpha = 3$, such that:
 
 $$
 | \ p_{n+1} | \leq C \cdot | p_{n} |^\alpha
@@ -29,3 +29,5 @@ $$
 $$
 \   C = 1 , \alpha = 3
 $$
+
+As $\alpha = 3$ , the sequence converges at order 3.

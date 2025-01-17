@@ -36,7 +36,7 @@ Selecting the exercise number will redirect the page to the solution.
 
 [Exercise 09](ex09/)
 
-![ex9](ex09/image1.png)
+![ex9](ex09/image.png)
 
 [Exercise 10](ex10/)
 

@@ -38,11 +38,13 @@ $$
 But at the beggining of this proof we defined $\ q(p) \neq 0$. So $\ f^{m} \neq 0$.
 
 Then, we've proved:
+
 $$
 \ f'(p) = f''(p) = ... = f^{m-1}(p) = 0
 $$
 
 And 
+
 $$
-f^{k}(x) = m! \cdot (x - p)^{0} \cdot q(p) \neq 0
+\ f^{k}(x) = m! \cdot (x - p)^{0} \cdot q(p) \neq 0
 $$

@@ -6,33 +6,27 @@
 
 We know from the theory of the chapter that the order of convergence of an iterative method is $\alpha$ such that:
 
-$$
-\begin{equation}
-    \lim_{n \to \infty} \frac{ | p_{n + 1} - p| }{| p_{n} - p |^\alpha} = \lambda 
-\end{equation}
+$$   
+\lim_{n \to \infty} \frac{ | p_{n + 1} - p| }{| p_{n} - p |^\alpha} = \lambda       \quad (1) 
 $$
 
-Let $ \ |e_{n} |$ be the $\ nth$ error of the iteraction. The value of $\ e_{n}$:
+Let $\ |e_{n} |$ be the $\ nth$ error of the iteraction. The value of $\ e_{n}$:
  
 $$
-\begin{equation}
-\   e_{n} = | p_{n} - p |
-\end{equation}
+\   e_{n} = | p_{n} - p |    \quad (2) 
 $$
 
 Replacing Equation(2) in Equation(1):
 
 $$
-\begin{equation}
-\ \lim_{n \to \infty} \frac{ | e_{n+1} |}{| e_{n} |^\alpha} = \lambda  
-\end{equation}
+\ \lim_{n \to \infty} \frac{ | e_{n+1} |}{| e_{n} |^\alpha} = \lambda  \quad(3)
 $$
 
 So for sufficiently large values of $\ n$ we have:
+
 $$
-\begin{equation}
-| e_{n+1} | = \lambda \cdot | e_{n} |^\alpha
-\end{equation}$$
+| e_{n+1} | = \lambda \cdot | e_{n} |^\alpha    \quad(4)
+$$
 
 Making adaptations in the Equation (3):
 
@@ -56,9 +50,7 @@ $$
 So, for sufficiently large values of $\ n$, we have:
 
 $$
-\begin{equation}
-|e_{n - 1} | = \lambda^{ \frac{-1}{\alpha}} \cdot | e_{n} |^{ \frac{1}{\alpha}} 
-\end{equation}
+|e_{n - 1} | = \lambda^{ \frac{-1}{\alpha}} \cdot | e_{n} |^{ \frac{1}{\alpha}}    \quad(5) 
 $$
 
 However, the question tile told us that:
@@ -78,14 +70,16 @@ $$
 $$
 
 But from Equation (4) we know that 
-$
+
+$$
 \ |e_{n+1}| = |e_{n}|^\alpha \cdot \lambda
-$
+$$
 
 And from Equation (5) we know 
-$
+
+$$
 |e_{n - 1} | = \lambda^{ \frac{-1}{a}} \cdot | e_{n} |^{ \frac{1}{a}}
-$
+$$
 
 So Equation (6) becomes:
 

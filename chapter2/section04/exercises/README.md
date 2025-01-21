@@ -57,35 +57,3 @@ Selecting the exercise number will redirect the page to the solution.
 [Exercise 14](ex14/)
 
 ![ex14](ex14/image.png)
-
-[Exercise 15](ex15/)
-
-![ex15](ex15/image.png)
-
-[Exercise 16](ex16/)
-
-![ex16](ex16/image.png)
-
-[Exercise 17](ex17/)
-
-![ex17](ex17/image.png)
-
-[Exercise 18](ex18/)
-
-![ex18](ex18/image.png)
-
-[Exercise 19](ex19/)
-
-![ex19](ex19/image.png)
-
-[Exercise 20](ex20/)
-
-![ex20](ex20/image.png)
-
-[Exercise 21](ex21/)
-
-![ex21](ex21/image.png)
-
-[Exercise 22](ex22/)
-
-![ex22](ex22/image.png)

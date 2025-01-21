@@ -7,28 +7,39 @@
 We know from the theory of the chapter that the order of convergence of an iterative method is $\alpha$ such that:
 
 $$
-    \lim_{n \to \infty} \frac{ | p_{n + 1} - p| }{| p_{n} - p |^\alpha} = \lambda  \tag{1}
+\begin{equation}
+    \lim_{n \to \infty} \frac{ | p_{n + 1} - p| }{| p_{n} - p |^\alpha} = \lambda 
+\end{equation}
 $$
 
 Let $ \ |e_{n} |$ be the $\ nth$ error of the iteraction. The value of $\ e_{n}$:
-
+ 
 $$
-\   e_{n} = | p_{n} - p | \tag{2}
+\begin{equation}
+\   e_{n} = | p_{n} - p |
+\end{equation}
 $$
 
 Replacing Equation(2) in Equation(1):
 
 $$
-\ \lim_{n \to \infty} \frac{ | e_{n+1} |}{| e_{n} |^\alpha} = \lambda  \tag{3}
+\begin{equation}
+\ \lim_{n \to \infty} \frac{ | e_{n+1} |}{| e_{n} |^\alpha} = \lambda  
+\end{equation}
 $$
+
+So for sufficiently large values of $\ n$ we have:
+$$
+\begin{equation}
+| e_{n+1} | = \lambda \cdot | e_{n} |^\alpha
+\end{equation}$$
 
 Making adaptations in the Equation (3):
 
 $$
-\ \lim_{n \to \infty} \frac{ | e_{n} | }{ | e_{n-1} |^\alpha } = \lambda \tag{4}
+\ \lim_{n \to \infty} \frac{ | e_{n} | }{ | e_{n-1} |^\alpha } = \lambda
 $$
 
-The equation above shows us that the error of the $\ Nth$ is function of the error from the previous iteraction
 
 $$
 \ \lim_{n \to \infty} \frac{| e_{n-1}^\alpha|}{| e_{n} |} = \lambda^{-1}
@@ -45,7 +56,9 @@ $$
 So, for sufficiently large values of $\ n$, we have:
 
 $$
-|e_{n - 1} | = \lambda^{ \frac{-1}{\alpha}} \cdot | e_{n} |^{ \frac{1}{\alpha}} \tag{5}
+\begin{equation}
+|e_{n - 1} | = \lambda^{ \frac{-1}{\alpha}} \cdot | e_{n} |^{ \frac{1}{\alpha}} 
+\end{equation}
 $$
 
 However, the question tile told us that:
@@ -59,7 +72,9 @@ $$
 $$
 
 $$
-\ |e_{n+1}| = C \cdot |e_{n}| \cdot |e_{n-1}| \tag{6}
+\begin{equation}
+\ |e_{n+1}| = C \cdot |e_{n}| \cdot |e_{n-1}| 
+\end{equation}
 $$
 
 But from Equation (4) we know that 
@@ -89,7 +104,7 @@ $$
 The exponents of $\ |e_{n}|$ must be equal, so:
 
 $$
-\alpha = 1 + frac{1}{\alpha}
+\alpha = 1 + \frac{1}{\alpha}
 $$
 
 Multiplying both sides by $\alpha$, we'd have:

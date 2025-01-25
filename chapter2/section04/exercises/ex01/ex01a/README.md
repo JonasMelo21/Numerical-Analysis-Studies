@@ -1,4 +1,4 @@
-# Letter C Solution
+# Letter A Solution
 
 ![plot](plot.png)
 

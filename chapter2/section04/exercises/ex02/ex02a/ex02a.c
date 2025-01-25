@@ -3,7 +3,7 @@
     This file is protected under MIT license
 
     This code is part of my studies in numerical analysis,
-    following Section 1 of Chapter 2 in the book "Numerical Analysis"
+    following Section 4 of Chapter 2 in the book "Numerical Analysis"
     by Richard L. Burden and J. Douglas Faires, 11th edition.
 
     Approach: 

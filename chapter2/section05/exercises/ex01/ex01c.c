@@ -9,8 +9,8 @@
     Approach:
     This program computes the first 5 terms of an Aitken's sequence 
     based on the recurrence relation:
-        p0 = 0.5
-        pn = (2 - e^x + x^2) / 3, n ≥ 1 
+        p0 = 0.5,
+        pn = 3^(-x), n ≥ 1
     where `x` is the previous term.
 
     Aitken's Δ² acceleration formula is used to accelerate the convergence of the sequence:
@@ -25,7 +25,7 @@
 
 // Function to compute the nth term of the sequence based on the recurrence relation
 double f(double x) {
-    return (2 - exp(x) + x * x) / 3;
+    return pow(3,-x);
 }
 
 int main() {

@@ -7,7 +7,7 @@
 
 [Letter A](ex01a.c)
 
-[Letter B](ex01b.c)
+[Letter B](EX01B.C)
 
 [Letter C](ex01c.c)
 

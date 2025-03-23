@@ -36,7 +36,7 @@ $$
 
 That's it, we've proven that the sequence is linearly convergent.
 
-## How many iteractions to guarantee $|  \pn - p \ |$ < 0.05 ?
+## How many iteractions to guarantee $|  pn - p \ |$ < 0.05 ?
 
 $$
 | \ p_{n} - p\ | \leq 0.05

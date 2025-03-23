@@ -40,7 +40,7 @@ This method also allows efficient polynomial division when searching for roots.
 
 Müller's Method is a root-finding algorithm that generalizes the **Secant Method** by approximating the function with a quadratic polynomial instead of a linear one.  
 
-Given three points $ x_0, x_1, x_2 $, the function is approximated by a **parabola** of the form:  
+Given three points $\ x_0, x_1, x_2 $, the function is approximated by a **parabola** of the form:  
 
 $$
 P(x) = a(x - x_2)^2 + b(x - x_2) + c

@@ -42,7 +42,6 @@ Müller's Method is a root-finding algorithm that generalizes the **Secant Metho
 
 
 Given three points $x_0, x_1, x_2$, the function is approximated by a **parabola** of the form:  
->>>>>>> b2a4063d6a1de5ab2e5583c0f5ad178122b4ef55
 
 $$
 P(x) = a(x - x_2)^2 + b(x - x_2) + c

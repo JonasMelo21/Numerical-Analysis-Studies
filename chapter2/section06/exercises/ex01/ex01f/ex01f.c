@@ -8,7 +8,7 @@
 
     Approach:
     This programm aims to compute the root of the equation below by Newton Method
-    f(x) = x^3 - 2x^2 - 5 
+    f(x) = x^5 −x^4 +2x^3 −3x^2 + x -4
     With 4 digits of tolerance
 */
 
@@ -16,11 +16,11 @@
 #include <stdio.h>
 
 double f(double x){
-    return pow(x,3) - 2 * pow(x,2) - 5;
+    return pow(x,5) - pow(x,4) + 2*pow(x,3) - 3*pow(x,2) + x - 4;
 }
 
 double derivative(double x){
-    return 3 * pow(x,2) - 4 * x;
+    return 5*pow(x,4) - 4*pow(x,3) + 6*pow(x,2) - 6*x + 1;
 }
 
 double newtonMethod(double p0, double tolerance, int maxIteractions){
@@ -47,7 +47,7 @@ int main(){
     double solution = newtonMethod(p0,tolerance,maxIteractions);
     if(solution == -1){}
     else{
-        printf("\nRoot of the equation: %.5f\n",solution);
+        printf("\nRoot of the equation for p0 = %.5f: %.5f\n",p0,solution);
     }
 
     return 0;

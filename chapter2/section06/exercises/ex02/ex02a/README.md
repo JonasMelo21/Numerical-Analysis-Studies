@@ -3,11 +3,9 @@
 ## Finding Roots with Newton's Method
 [This C code yielded the roots bellow(click here to see the code)](ex02a.c)
 
-| Root | Value |
-----------------
-| x1   |- 4.12311|
-| x2   |+ 4.12311|
-
+Roots: 
+    - x1 = -4.12311
+    - x2 = 4.12311
 ## Reducing the Polynomial to Find Complex Roots
 
 Dividing the polynomial 

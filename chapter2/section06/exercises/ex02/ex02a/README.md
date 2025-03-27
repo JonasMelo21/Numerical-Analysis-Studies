@@ -45,7 +45,7 @@ $$
 $$
 
 $$
-\sqrt{\Delta} = \sqrt{-7}
+\sqrt{\Delta} = \sqrt{-7} = \sqrt{7} \cdot i
 $$
 
 $$

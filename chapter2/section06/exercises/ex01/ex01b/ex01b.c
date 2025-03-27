@@ -47,13 +47,22 @@ int main(){
     double solution = newtonMethod(p0,tolerance,maxIteractions);
     if(solution == -1){}
     else{
-        printf("\nRoot of the equation between 0 and 1: %.5f\n",solution);
+        printf("\nRoot of the equation between 0 and 1 for p0 = %.5f: %.5f\n",p0,solution);
     }
 
     p0 = 0 - 1;
     solution = newtonMethod(p0,tolerance,maxIteractions);
     if(solution != -1){
-        printf("\nRoot of the equation between 0 and -1: %.5f\n",solution);
+        printf("\nRoot of the equation between 0 and -1 for p0 = %.5f: %.5f\n",p0,solution);
+    }else{
+        printf("\nNewton method failed for p0 = %.5f\n",p0);
+    }
+
+
+    p0 = 0 - 3;
+    solution = newtonMethod(p0,tolerance,maxIteractions);
+    if(solution != -1){
+        printf("\nRoot of the equation between -3 and -2 for p0 = %.5f: %.5f\n",p0,solution);
     }else{
         printf("\nNewton method failed for p0 = %.5f\n",p0);
     }

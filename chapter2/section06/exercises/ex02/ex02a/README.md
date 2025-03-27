@@ -23,7 +23,7 @@ $$
 We have the polynomial
 
 $$
-    \frac{P(x)}{Q(x)} = \frac{x^{4} +5x^{3} - 9x^{2} − 85^{x} -136}{(x + 4.12311)(x - 4.12311)} = x^{2} + 5x 8
+    \frac{P(x)}{Q(x)} = \frac{x^{4} +5x^{3} - 9x^{2} − 85^{x} -136}{(x + 4.12311)(x - 4.12311)} = x^{2} + 5x + 8
 $$
 
 Let's use quadratic formula to find complex solutions

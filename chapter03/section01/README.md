@@ -72,3 +72,7 @@ This repository includes:
 ---
 
 **Note**: GitHub supports MathJax rendering in Markdown. For best results, view this file on GitHub or with a MathJax-compatible viewer.
+
+# Exercises:
+
+the exercises of this section can be found [clicking here](exercises/)

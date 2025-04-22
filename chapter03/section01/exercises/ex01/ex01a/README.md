@@ -1,91 +1,43 @@
-# Exercises:
+# Exercise 01 A
 
-Selecting the exercise number will redirect the page to the solution.
+We have to find first and second degree Lagrange Interpolating Linear Polynomial for $f(x) = cos(x)$ with $x_{0} = 0, x_{1} = 0.6 ,  x_{2} = 0.9$
 
-[Exercise 01](ex01/)
+First, let's remember the general form of Lagrange Linear Interpolating Polynomial for any degree $n$:
 
-![ex1](ex01/image.png)
+$$
+P(x) = \sum_{k = 0}^{n} f(x_{k}) \cdot L_{k}(x)
+$$
 
-[Exercise 02](ex02/)
+$$
+L_{k}(x) = \prod_{i=0, i \neq k}^{n} \frac{(x - x_{i})}{x_{k} - x_{i}}
+$$
 
-![ex2](ex02/image.png)
+## First Degree Polynomial (N = 1)
 
-[Exercise 03](ex03/)
+The form of the polynomial with degree 1 will be:
 
-![ex3](ex03/image.png)
+$$
+P(x) = f(x_{0}) \cdot L_{0}(x) + f(x_{1}) \cdot L_{1}(x)
+$$
 
-[Exercise 04](ex04/)
+As $f(x_{0}) = cos(x_{0}) = cos(0) = 1$ and $f(x_{1}) = cos(x_{1}) = cos(0.6) = 0.82$ we have:
 
-![ex4](ex04/image.png)
+$$
+P(x) = 1 \cdot L_{0}(x) + 0.82 \cdot L_{1}(x)
+$$
 
-[Exercise 05](ex05/)
+Now, let's find $L_{0}$ and $L_{1}$ given that:
 
-![ex05](ex05/image.png)
+$$
+L_{k}(x) = \prod_{i=0, i \neq k}^{n} \frac{(x - x_{i})}{x_{k} - x_{i}}
+$$
 
-[Exercise 06](ex06/)
+For $k = 0$ and $n = 1$:
 
-![ex6](ex06/image.png)
+$$
+L_{0} = \frac{(x - x_{1})}{x_{0} - x_{1}} = \frac{(x - 0.6)}{(0 - 0.6)} = \frac{(x - 0.6)}{-0.6} = \frac{(0.6 - x)}{0.6} = 1 - \frac{x}{0.6}
+$$
 
-[Exercise 07](ex07/)
-
-![ex7](ex07/image1.png)
-
-[Exercise 08](ex08/)
-
-![ex8](ex08/image1.png)
-
-[Exercise 09](ex09/)
-
-![ex9](ex09/image1.png)
-
-[Exercise 10](ex10/)
-
-![ex10](ex10/image.png)
-
-[Exercise 11](ex11/)
-
-![ex11](ex11/image.png)
-
-[Exercise 12](ex12/)
-
-![ex12](ex12/image.png)
-
-[Exercise 13](ex13/)
-
-![ex13](ex13/image.png)
-
-[Exercise 14](ex14/)
-
-![ex14](ex14/image.png)
-
-[Exercise 15](ex15/)
-
-![ex15](ex15/image.png)
-
-[Exercise 16](ex16/)
-
-![ex16](ex16/image.png)
-
-[Exercise 17](ex17/)
-
-![ex17](ex17/image.png)
-
-[Exercise 18](ex18/)
-
-![ex18](ex18/image.png)
-
-[Exercise 19](ex19/)
-
-![ex19](ex19/image.png)
-
-[Exercise 20](ex20/)
-
-![ex20](ex20/image.png)
-
-[Exercise 21](ex21/)
-
-![ex21](ex21/image.png)
-
-[Exercise 22](ex22/)
-
-![ex22](ex22/image.png)
+$$
+\boxed{L_{0} = 1 - \frac{x}{0.6}}
+$$

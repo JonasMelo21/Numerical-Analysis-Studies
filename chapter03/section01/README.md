@@ -40,6 +40,7 @@ P_2(x) = 2 \cdot \frac{(x-2)(x-4)}{(1-2)(1-4)} + 3 \cdot \frac{(x-1)(x-4)}{(2-1)
 $$
 
 Simplifying:
+
 $$
 P_2(x) = \frac{2}{3}(x-2)(x-4) - \frac{3}{2}(x-1)(x-4).
 $$
@@ -53,7 +54,7 @@ $$
 f(x) - P_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!} \prod_{i=0}^n (x - x_i),
 $$
 
-where $\x_{i}$ lies in the interval containing $x_0, x_1, \dots, x_n$ and $x$.
+where $x_{i}$ lies in the interval containing $x_0, x_1, \dots, x_n$ and $x$.
 
 ---
 

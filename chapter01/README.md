@@ -6,7 +6,7 @@ This chapter introduces foundational concepts for numerical analysis, including 
 
 ## 📖 Sections Summary
 
-### 1.1 Review of Calculus
+### [1.1 Review of Calculus](section01/)
 Key theorems from calculus essential for error analysis:
 - **Taylor’s Theorem**:  
   For $f \in C^{n+1}[a, b]$ and $x_0 \in [a, b]$, the Taylor polynomial approximation is:
@@ -18,12 +18,12 @@ Key theorems from calculus essential for error analysis:
   R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x - x_0)^{n+1}, \quad \xi \in (x_0, x).
   $$
 
-### 1.2 Roundoff Errors and Truncation
+### [1.2 Roundoff Errors and Truncation](section02/)
 - **Roundoff Errors**: Caused by finite-digit representation (e.g., IEEE 754).  
   Example: Floating-point representation $x = \pm 0.d_1d_2 \dots d_k \times 10^n$.
 - **Truncation Errors**: Result from approximating infinite processes (e.g., series truncation).
 
-### 1.3 Algorithms and Convergence
+### [1.3 Algorithms and Convergence](section03/)
 - **Algorithm Stability**: Sensitive vs. insensitive to small errors.  
 - **Rate of Convergence**: For a sequence $\{x_n\}$ converging to $x^*$, if $\exists \lambda > 0$ such that:
   $$
@@ -32,7 +32,7 @@ Key theorems from calculus essential for error analysis:
   then $\lambda$ is the **asymptotic error constant**.
 
 ### 1.4 Numerical Software
-- Tools: MATLAB, Python (`numpy`), and Julia.  
+- Tools: MATLAB, C  
 - Best practices: Avoid catastrophic cancellation, use built-in libraries for stability.
 
 ---
@@ -40,19 +40,9 @@ Key theorems from calculus essential for error analysis:
 ## 🔍 Key Concepts
 | Term               | Definition                                                                 |
 |--------------------|---------------------------------------------------------------------------|
-| **Absolute Error** | $|x - \hat{x}|$ where $x$ is exact, $\hat{x}$ is approximation.          |
-| **Relative Error** | $\frac{|x - \hat{x}|}{|x|}$ (if $x \neq 0$).                              |
+| **Absolute Error** | $|x - \hat{x}|$ where $x$ is exact, $\hat{x}$ is approximation$.          |
+| **Relative Error** | $ \frac{|x - \hat{x}|}{ |x| }$ (if $x \neq 0$).                              |
 | **Machine Epsilon** | Smallest $\epsilon$ such that $1 + \epsilon > 1$ in floating-point.     |
-
----
-
-## 💻 Code Examples
-- **Python snippet for Taylor expansion**:
-  ```python
-  import numpy as np
-  def taylor_exp(x, n_terms=5):
-      return sum((-1)**k * x**(2*k + 1) / np.math.factorial(2*k + 1) for k in range(n_terms))
-  ```
 
 ---
 
@@ -63,7 +53,6 @@ Key theorems from calculus essential for error analysis:
 ---
 
 **Note**: View this file on GitHub or with a MathJax-enabled renderer for proper equation display. 
-```
 
 ### Features:
 1. **Consistent Structure**: Matches your repository’s chapter/section organization.

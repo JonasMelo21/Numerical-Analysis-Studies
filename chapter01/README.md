@@ -42,14 +42,23 @@ then $\lambda$ is the **asymptotic error constant**.
 
 ---
 
-## 🔍 Key Concepts
-| Term               | Definition                                                                 |
-|--------------------|---------------------------------------------------------------------------|
-| **Absolute Error** | $|x - \hat{x}|$ where $x$ is exact, $\hat{x}$ is approximation.          |
-| **Relative Error** | $\frac{|x - \hat{x}|}{|x|}$ (if $x \neq 0$).                              |
-| **Machine Epsilon** | Smallest $\epsilon$ such that $1 + \epsilon > 1$ in floating-point.     |
+### 🔍 Key Concepts
 
----
+- **Absolute Error**:  
+
+$$
+\ |x - \hat{x}|
+$$
+
+- **Relative Error** if $\( x \neq 0 \))$:  
+
+$$ 
+\frac{|x - \hat{x}|}{|x|} 
+$$
+
+- **Machine Epsilon**:  
+Smallest $\( \epsilon \)$ such that $\( 1 + \epsilon > 1 \)$ in floating-point.
+
 
 ## 📚 References
 - Burden, R. L., & Faires, J. D. (2011). *Numerical Analysis* (9th ed.). Cengage Learning.  

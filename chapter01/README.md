@@ -10,13 +10,17 @@ This chapter introduces foundational concepts for numerical analysis, including 
 Key theorems from calculus essential for error analysis:
 - **Taylor’s Theorem**:  
   For $f \in C^{n+1}[a, b]$ and $x_0 \in [a, b]$, the Taylor polynomial approximation is:
+  
   $$
-  f(x) = P_n(x) + R_n(x), \quad \text{where} \quad P_n(x) = \sum_{k=0}^n \frac{f^{(k)}(x_0)}{k!}(x - x_0)^k,
+  \ f(x) = P_n(x) + R_n(x), \quad \text{where} \quad P_n(x) = \sum_{k=0}^n \frac{f^{(k)}(x_0)}{k!}(x - x_0)^k,
   $$
+  
   and the remainder term is:
+  
   $$
-  R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x - x_0)^{n+1}, \quad \xi \in (x_0, x).
+  \ R_n(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}(x - x_0)^{n+1}, \quad \xi \in (x_0, x).
   $$
+  
 
 ### [1.2 Roundoff Errors and Truncation](section02/)
 - **Roundoff Errors**: Caused by finite-digit representation (e.g., IEEE 754).  
@@ -26,9 +30,11 @@ Key theorems from calculus essential for error analysis:
 ### [1.3 Algorithms and Convergence](section03/)
 - **Algorithm Stability**: Sensitive vs. insensitive to small errors.  
 - **Rate of Convergence**: For a sequence $\{x_n\}$ converging to $x^*$, if $\exists \lambda > 0$ such that:
+- 
   $$
-  \lim_{n \to \infty} \frac{|x_{n+1} - x^*|}{|x_n - x^*|} = \lambda,
+   \lim_{n \to \infty} \frac{|x_{n+1} - x^*|}{|x_n - x^*|} = \lambda,
   $$
+  
   then $\lambda$ is the **asymptotic error constant**.
 
 ### 1.4 Numerical Software

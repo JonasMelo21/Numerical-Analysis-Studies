@@ -1,89 +1,149 @@
 # Exercise 01 B
 
-We want to find the first and second degree linear lagrange interpolating polynomial for the function $ f(x) = \sqrt{1+x}$
-
-The general form of a Linear Lagrange Interpolating Polynomial of degree n is:
+We want to find the Lagrange interpolating polynomials of first and second degree for the function:
 
 $$
-P(x) = \sum_{k = 0}^{n} f(x_{k}) \cdot L_{k}(x)
+f(x) = \sqrt{1 + x}
 $$
 
-$$
-L_{k}(x) = \prod_{i = 0,i \neq k}^{n} \frac{(x - x_{i})}{(x_{k} - x_{i})}
-$$
-
-## First Degree Polynomial( N = 1):
+The general form of the Lagrange interpolating polynomial of degree \( n \) is:
 
 $$
-P(x) = f(x_{0}) \cdot L_{0}(x) + f(x_{1}) \cdot L_{1}(x)
+P(x) = \sum_{k = 0}^{n} f(x_k) \cdot L_k(x)
 $$
 
-$$
-P(x) = \sqrt{1 + 0} \cdot L_{0}(x) + \sqrt{1 + 0.6} \cdot L_{1}(x)
-$$
+where
 
 $$
-P(x) = L_{0}(x) + \sqrt{1.6} \cdot L_{1}(x)
+L_k(x) = \prod_{\substack{i=0 \\ i \neq k}}^{n} \frac{x - x_i}{x_k - x_i}
 $$
 
-$$
-P(x) = L_{0}(x) + 1.264 \cdot L_{1}(x)
-$$
+---
 
-$$
-P(x) = L_{0}(x) + 1.264 \cdot L_{1}(x)
-$$
+## First Degree (N = 1)
 
-### Let's Find $L_{0}(x)$ and $L_{1}(x)$:
+Using the points \( x_0 = 0 \) and \( x_1 = 0.6 \):
 
-As the genral form of L_{k}(x) is:
+- \( f(x_0) = \sqrt{1+0} = 1 \)
+- \( f(x_1) = \sqrt{1+0.6} \approx 1.264 \)
 
-$$
-L_{k}(x) = \prod_{i = 0,i \neq k}^{n} \frac{(x - x_{i})}{(x_{k} - x_{i})}
-$$
+### Basis polynomials \( L_0(x) \) and \( L_1(x) \):
 
-We have:
+\[
+L_0(x) = \frac{x - 0.6}{0 - 0.6} = 1 - \frac{x}{0.6}
+\]
 
-For $k = 0 \rightarrow L_{0}(x)$:
+\[
+L_1(x) = \frac{x - 0}{0.6 - 0} = \frac{x}{0.6}
+\]
 
-$$
-L_{0}(x) = \frac{(x - x_{1})}{(x_{0} - x_{1})} = \frac{(x - 0.6)}{(0 - 0.6)} = 1 - \frac{x}{0.6}
-$$
+### Lagrange polynomial of 1st degree:
 
-Notice that L_{0}(x) is the same for the one we found in exercise 1 letter a. So:
+\[
+P(x) = 1 \cdot L_0(x) + 1.264 \cdot L_1(x)
+\]
 
-$$
-L_{1}(x)= \frac{x}{0.6}
-$$
+\[
+P(x) = 1 - \frac{x}{0.6} + 1.264 \cdot \frac{x}{0.6}
+\]
 
-So $1^{st}$ degree polynomial is:
+\[
+P(x) = 1 + \frac{0.264}{0.6} x = 1 + 0.44x
+\]
 
-$$
-P(x) = 1 \cdot (1 - \frac{x}{0.6}) + 1.264 \cdot (\frac{x}{0.6})
-$$
+### Evaluating at \( x = 0.45 \):
 
-$$
-P(x) =  1 - \frac{x}{0.6} + 1.264 \cdot (\frac{x}{0.6})
-$$
-
-$$
-P(x) = 1 + 0.264 \cdot \frac{x}{0.6}
-$$
-
-$$
-P(x) = 1 + 0.44 \cdot x
-$$
-
-### Evaluating P(x) for x = 0.45
-
-$$
+\[
 P(0.45) = 1 + 0.44 \cdot 0.45 = 1 + 0.198 = 1.198
-$$
+\]
 
-### Absolute Error
+### Exact value:
 
-$$
-P(x) = | 1.198 - 1,2 | \approx 0.002
-$$
+\[
+f(0.45) = \sqrt{1 + 0.45} = \sqrt{1.45} \approx 1.204
+\]
 
-## Second Degree Polynomial (N = 2):
+### Absolute error:
+
+\[
+|f(0.45) - P(0.45)| = |1.204 - 1.198| = 0.006
+\]
+
+---
+
+## Second Degree (N = 2)
+
+Using the points:
+
+- \( x_0 = 0 \Rightarrow f(x_0) = \sqrt{1+0} = 1 \)
+- \( x_1 = 0.6 \Rightarrow f(x_1) = \sqrt{1+0.6} \approx 1.264 \)
+- \( x_2 = 0.9 \Rightarrow f(x_2) = \sqrt{1+0.9} \approx 1.378 \)
+
+### Basis polynomials:
+
+\[
+L_0(x) = \frac{(x - 0.6)(x - 0.9)}{(0 - 0.6)(0 - 0.9)} = \frac{(x - 0.6)(x - 0.9)}{0.54}
+\]
+
+\[
+L_1(x) = \frac{(x - 0)(x - 0.9)}{(0.6 - 0)(0.6 - 0.9)} = \frac{x(x - 0.9)}{-0.18}
+\]
+
+\[
+L_2(x) = \frac{(x - 0)(x - 0.6)}{(0.9 - 0)(0.9 - 0.6)} = \frac{x(x - 0.6)}{0.27}
+\]
+
+### Lagrange polynomial of 2nd degree:
+
+\[
+P(x) = 1 \cdot L_0(x) + 1.264 \cdot L_1(x) + 1.378 \cdot L_2(x)
+\]
+
+\[
+P(x) = \frac{(x - 0.6)(x - 0.9)}{0.54} - 1.264 \cdot \frac{x(x - 0.9)}{0.18} + 1.378 \cdot \frac{x(x - 0.6)}{0.27}
+\]
+
+### Evaluating at \( x = 0.45 \):
+
+1. \( L_0(0.45) = \frac{(0.45 - 0.6)(0.45 - 0.9)}{0.54} = \frac{(-0.15)(-0.45)}{0.54} = \frac{0.0675}{0.54} \approx 0.125 \)
+
+2. \( L_1(0.45) = \frac{0.45(0.45 - 0.9)}{-0.18} = \frac{0.45(-0.45)}{-0.18} = \frac{-0.2025}{-0.18} \approx 1.125 \)
+
+3. \( L_2(0.45) = \frac{0.45(0.45 - 0.6)}{0.27} = \frac{0.45(-0.15)}{0.27} = \frac{-0.0675}{0.27} \approx -0.25 \)
+
+\[
+P(0.45) \approx 1 \cdot 0.125 + 1.264 \cdot 1.125 + 1.378 \cdot (-0.25)
+\]
+
+\[
+P(0.45) \approx 0.125 + 1.422 + (-0.3445) = 1.2025
+\]
+
+### Exact value:
+
+\[
+f(0.45) = \sqrt{1.45} \approx 1.204
+\]
+
+### Absolute error:
+
+\[
+|f(0.45) - P(0.45)| = |1.204 - 1.2025| = 0.0015
+\]
+
+---
+
+## Conclusion
+
+- **1st-degree polynomial:** \( P(x) = 1 + 0.44x \)
+  - Approximation at \( x = 0.45 \): \( 1.198 \)
+  - Absolute error: \( \approx 0.006 \)
+
+- **2nd-degree polynomial:**  
+  \[
+  P(x) = \frac{(x - 0.6)(x - 0.9)}{0.54} - 1.264 \cdot \frac{x(x - 0.9)}{0.18} + 1.378 \cdot \frac{x(x - 0.6)}{0.27}
+  \]
+  - Approximation at \( x = 0.45 \): \( \approx 1.2025 \)
+  - Absolute error: \( \approx 0.0015 \)
+
+---
